@@ -1,0 +1,200 @@
+@import "_mixin";
+
+/* ========================================================================
+   Component: Flex, build with UIkit 3.3.3.
+ ========================================================================== */
+
+.ck-flex {
+    display: flex;
+}
+
+.ck-flex-inline {
+    display: inline-flex;
+}
+
+
+/*
+ * Remove pseudo elements created by micro clearfix as precaution
+ */
+
+.ck-flex::before,
+.ck-flex::after,
+.ck-flex-inline::before,
+.ck-flex-inline::after {
+    display: none;
+}
+
+
+/* Alignment
+ ========================================================================== */
+
+
+/*
+ * Align items along the main axis of the current line of the flex container
+ * Row: Horizontal
+ */
+
+.ck-flex-left {
+    justify-content: flex-start;
+}
+
+.ck-flex-center {
+    justify-content: center;
+}
+
+.ck-flex-right {
+    justify-content: flex-end;
+}
+
+.ck-flex-between {
+    justify-content: space-between;
+}
+
+.ck-flex-around {
+    justify-content: space-around;
+}
+
+
+/*
+ * Align items in the cross axis of the current line of the flex container
+ * Row: Vertical
+ */
+
+.ck-flex-stretch {
+    align-items: stretch;
+}
+
+.ck-flex-top {
+    align-items: flex-start;
+}
+
+.ck-flex-middle {
+    align-items: center;
+}
+
+.ck-flex-bottom {
+    align-items: flex-end;
+}
+
+
+/* Direction
+ ========================================================================== */
+
+.ck-flex-row {
+    flex-direction: row;
+}
+
+.ck-flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.ck-flex-column {
+    flex-direction: column;
+}
+
+.ck-flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+/* Wrap
+ ========================================================================== */
+
+.ck-flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.ck-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.ck-flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+/*
+ * Aligns items within the flex container when there is extra space in the cross-axis
+ * Only works if there is more than one line of flex items
+ */
+
+.ck-flex-wrap-stretch {
+    align-content: stretch;
+}
+
+.ck-flex-wrap-top {
+    align-content: flex-start;
+}
+
+.ck-flex-wrap-middle {
+    align-content: center;
+}
+
+.ck-flex-wrap-bottom {
+    align-content: flex-end;
+}
+
+.ck-flex-wrap-between {
+    align-content: space-between;
+}
+
+.ck-flex-wrap-around {
+    align-content: space-around;
+}
+
+
+/* Item ordering
+ ========================================================================== */
+
+
+/*
+ * Default is 0
+ */
+
+.ck-flex-first {
+    order: -1;
+}
+
+.ck-flex-last {
+    order: 99;
+}
+
+
+/* Item dimensions
+ ========================================================================== */
+
+
+/*
+ * Initial: 0 1 auto
+ * Content dimensions, but shrinks
+ */
+
+
+/*
+ * No Flex: 0 0 auto
+ * Content dimensions
+ */
+
+.ck-flex-none {
+    flex: none;
+}
+
+
+/*
+ * Relative Flex: 1 1 auto
+ * Space is allocated considering content
+ */
+
+.ck-flex-auto {
+    flex: auto;
+}
+
+
+/*
+ * Absolute Flex: 1 1 0%
+ * Space is allocated solely based on flex
+ */
+
+.ck-flex-1 {
+    flex: 1;
+}

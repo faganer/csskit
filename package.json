@@ -1,0 +1,25 @@
+{
+    "name": "csskit",
+    "version": "1.0.0",
+    "description": "Simple CSS component library.",
+    "main": "dist/css/csskit.min.css",
+    "author": "iOpenV",
+    "license": "MIT",
+    "dependencies": {
+        "autoprefixer": "^9.7.4",
+        "cssnano": "^4.1.10",
+        "del": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-changed": "^4.0.2",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.0.2"
+    },
+    "browserslist": [
+        "firefox > 50",
+        "Safari > 9",
+        "Opera > 50",
+        "ie >= 10",
+        "chrome > 50"
+    ]
+}
