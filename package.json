@@ -16,10 +16,14 @@
         "gulp-sass": "^4.0.2"
     },
     "browserslist": [
-        "firefox > 50",
+        "firefox > 40",
         "Safari > 9",
         "Opera > 50",
         "ie >= 10",
-        "chrome > 50"
+        "chrome > 50",
+        "Edge >= 12",
+        "Safari >= 9",
+        "Opera >= 17"
+
     ]
 }
