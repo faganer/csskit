@@ -14,7 +14,8 @@
  */
 
 html {
-    line-height: 1.15;
+    // line-height: 1.15;
+    line-height: 1.5;
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
@@ -201,7 +202,8 @@ textarea {
     /* 1 */
     font-size: 100%;
     /* 1 */
-    line-height: 1.15;
+    // line-height: 1.15;
+    line-height: 1.5;
     /* 1 */
     margin: 0;
     /* 2 */
@@ -425,6 +427,10 @@ template {
 /* Customize
    ========================================================================== */
 
+* {
+    box-sizing: border-box;
+}
+
 
 /*
  * 1. Set `font-size` to support `rem` units
@@ -444,6 +450,17 @@ body {
 
 img {
     vertical-align: middle;
+}
+
+input,
+select {
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    height: 34px;
+    line-height: 1;
 }
 
 
