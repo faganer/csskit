@@ -2,6 +2,10 @@
     "name": "csskit",
     "version": "1.0.0",
     "description": "Simple CSS component library.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/faganer/csskit.git"
+    },
     "main": "dist/css/csskit.min.css",
     "author": "iOpenV",
     "license": "MIT",

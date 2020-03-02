@@ -1,6 +1,391 @@
 /* ========================================================================
-   Component: Flex, build with UIkit 3.3.3.
+   Reset Utilities: http://compass-style.org/reference/compass/reset/utilities/
  ========================================================================== */
+
+@mixin reset-global {
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        @include reset-box-model;
+        @include reset-font;
+    }
+    // Unlike Eric's original reset, we reset the html element to be compatible
+    // with the vertical rhythm mixins.
+    html {
+        @include reset-body;
+    }
+    ol,
+    ul {
+        @include reset-list-style;
+    }
+    table {
+        @include reset-table;
+    }
+    caption,
+    th,
+    td {
+        @include reset-table-cell;
+    }
+    q,
+    blockquote {
+        @include reset-quotation;
+    }
+    a img {
+        @include reset-image-anchor-border;
+    }
+    // @include reset-html5;
+}
+
+@mixin reset-nested {
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        @include reset-box-model;
+        @include reset-font;
+    }
+    table {
+        @include reset-table;
+    }
+    caption,
+    th,
+    td {
+        @include reset-table-cell;
+    }
+    q,
+    blockquote {
+        @include reset-quotation;
+    }
+    a img {
+        @include reset-image-anchor-border;
+    }
+}
+
+@mixin reset-box-model {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin reset-font {
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+@mixin reset-focus {
+    outline: 0;
+}
+
+@mixin reset-body {
+    line-height: 1;
+}
+
+@mixin reset-list-style {
+    list-style: none;
+}
+
+@mixin reset-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@mixin reset-table-cell {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+@mixin reset-quotation {
+    quotes: none;
+    &:before,
+    &:after {
+        content: "";
+        content: none;
+    }
+}
+
+@mixin reset-border {
+    border: none;
+}
+
+
+/* Layout
+   ========================================================================== */
+
+@mixin ck-clearfix {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin ck-left {
+    float: left!important;
+}
+
+@mixin ck-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin ck-right {
+    float: right!important;
+}
+
+
+/* Typography
+   ========================================================================== */
+
+// Links
+@mixin link-colors($normal, $hover, $active, $focus) {
+    color: $normal;
+    &:hover {
+        color: $hover;
+        @include reset-focus;
+    }
+    &:active {
+        color: $active;
+        @include reset-focus;
+    }
+    &:focus {
+        color: $focus;
+        @include reset-focus;
+    }
+}
+
+// Lists
+@mixin ck-no-bullet {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+@mixin ck-no-bullets {
+    list-style: none;
+    li {
+        @include ck-no-bullet;
+    }
+}
+
+@mixin ck-horizontal-list($padding: 4px, $direction: left) {
+    @include reset-box-model;
+    @include ck-clearfix;
+    @include ck-no-bullets;
+    li {
+        white-space: nowrap;
+        // @include ck-horizontal-list-item($padding, $direction);
+        @if $direction {
+            float: $direction;
+        }
+        @if $padding {
+            padding: {
+                left: $padding;
+                right: $padding;
+            }
+        }
+    }
+}
+
+@mixin ck-inline-list {
+    list-style-type: none;
+    &,
+    & li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+}
+
+// Text
+@mixin ck-ellipsis($no-wrap: true) {
+    @if $no-wrap {
+        white-space: nowrap;
+    }
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+@mixin ck-nowrap {
+    white-space: nowrap;
+}
+
+@mixin ck-text-left {
+    text-align: left;
+}
+
+@mixin ck-text-center {
+    text-align: left;
+}
+
+@mixin ck-text-right {
+    text-align: right;
+}
+
+@mixin ck-text-justify {
+    text-align: justify;
+}
+
+
+/* Component: Flex, build with UIkit 3.3.3.
+   ==========================================================================*/
 
 @mixin ck-flex {
     display: flex;

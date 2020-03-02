@@ -1,6 +1,7 @@
 @import "_mixin";
+@import "_variables";
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 
 /* Document
@@ -437,6 +438,126 @@ html {
     font-weight: normal;
 }
 
+body {
+    color: $primary-color;
+}
+
 img {
     vertical-align: middle;
+}
+
+
+/* Reset Utilities
+   ========================================================================== */
+
+.reset-box-model {
+    @include reset-box-model;
+}
+
+.reset-font {
+    @include reset-font;
+}
+
+.reset-focus {
+    @include reset-focus;
+}
+
+.reset-body {
+    @include reset-body;
+}
+
+.reset-list-style {
+    @include reset-list-style;
+}
+
+.reset-table {
+    @include reset-table;
+}
+
+.reset-table-cell {
+    @include reset-table-cell;
+}
+
+.reset-quotation {
+    @include reset-quotation;
+}
+
+.reset-border {
+    @include reset-border;
+}
+
+
+/* Layout
+   ========================================================================== */
+
+.ck-clearfix {
+    @include ck-clearfix;
+}
+
+.ck-left {
+    @include ck-left;
+}
+
+.ck-center {
+    @include ck-center;
+}
+
+.ck-right {
+    @include ck-right;
+}
+
+
+/* Typography
+   ========================================================================== */
+
+// Links
+a,
+.ck-link {
+    text-decoration: none;
+    @include link-colors($primary-link, darken($color: $primary-link, $amount: 10), darken($color: $primary-link, $amount: 15), darken($color: $primary-link, $amount: 10));
+}
+
+// Lists
+.ck-no-bullet {
+    @include ck-no-bullet;
+}
+
+.ck-no-bullets {
+    list-style: none;
+    li {
+        @include ck-no-bullet;
+    }
+}
+
+.ck-horizontal-list {
+    @include ck-horizontal-list;
+}
+
+.ck-inline-list {
+    @include ck-inline-list;
+}
+
+// Text
+.ck-ellipsis {
+    @include ck-ellipsis;
+}
+
+.ck-nowrap {
+    @include ck-nowrap;
+}
+
+.ck-text-left {
+    @include ck-text-left
+}
+
+.ck-text-center {
+    @include ck-text-center
+}
+
+.ck-text-right {
+    @include ck-text-right
+}
+
+.ck-text-justify {
+    @include ck-text-justify
 }
