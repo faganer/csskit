@@ -7,8 +7,8 @@
         "type": "git",
         "url": "https://github.com/faganer/csskit.git"
     },
-    "jsdelivr": "dist/css/csskit.css",
-    "main": "dist/css/csskit.css",
+    "jsdelivr": "dist/css/csskit.all.min.css",
+    "main": "dist/css/csskit.all.min.css",
     "author": {
         "name": "iOpenV",
         "url": "https://www.iopenv.com/"
