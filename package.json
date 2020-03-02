@@ -1,5 +1,6 @@
 {
     "name": "csskit",
+    "title": "CSSkit",
     "version": "1.0.0",
     "description": "Simple CSS component library.",
     "repository": {
@@ -7,7 +8,10 @@
         "url": "https://github.com/faganer/csskit.git"
     },
     "main": "dist/css/csskit.min.css",
-    "author": "iOpenV",
+    "author": {
+        "name": "iOpenV",
+        "url": "https://www.iopenv.com/"
+    },
     "license": "MIT",
     "dependencies": {
         "autoprefixer": "^9.7.4",
