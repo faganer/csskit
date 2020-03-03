@@ -1,0 +1,85 @@
+@import "_mixin";
+@import "_variables";
+
+/* Background
+ ==========================================================================*/
+
+// Size
+.ck-background-cover,
+.ck-background-contain {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.ck-background-cover {
+    background-size: cover;
+}
+
+.ck-background-contain {
+    background-size: contain;
+}
+
+// .Position
+.ck-background-top-left {
+    background-position: 0 0;
+}
+
+.ck-background-top-center {
+    background-position: 50% 0;
+}
+
+.ck-background-top-right {
+    background-position: 100% 0;
+}
+
+.ck-background-center-left {
+    background-position: 0 50%;
+}
+
+.ck-background-center-center {
+    background-position: 50% 50%;
+}
+
+.ck-background-center-right {
+    background-position: 100% 50%;
+}
+
+.ck-background-bottom-left {
+    background-position: 0 100%;
+}
+
+.ck-background-bottom-center {
+    background-position: 50% 100%;
+}
+
+.ck-background-bottom-right {
+    background-position: 100% 100%;
+}
+
+// .Repeat
+.ck-background-norepeat {
+    background-repeat: no-repeat;
+}
+
+// Attachment
+
+/*
+ * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+ */
+
+.ck-background-fixed {
+    background-attachment: fixed;
+    /* 1 */
+    backface-visibility: hidden;
+}
+
+
+/*
+ * Exclude touch devices because `fixed` doesn't work on iOS and Android
+ */
+
+@media (pointer: coarse) {
+    .ck-background-fixed {
+        background-attachment: scroll;
+    }
+}

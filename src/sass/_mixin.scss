@@ -278,7 +278,7 @@
 }
 
 @mixin ck-left {
-    float: left!important;
+    float: left !important;
 }
 
 @mixin ck-center {
@@ -287,7 +287,7 @@
 }
 
 @mixin ck-right {
-    float: right!important;
+    float: right !important;
 }
 
 
@@ -381,6 +381,23 @@
 
 @mixin ck-text-justify {
     text-align: justify;
+}
+
+
+/* Cover
+   ========================================================================== */
+
+@mixin ck-cover-container {
+    overflow: hidden;
+    position: relative;
+}
+
+@mixin ck-cover {
+    position: absolute;
+    max-width: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
