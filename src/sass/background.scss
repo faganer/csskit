@@ -5,60 +5,60 @@
  ==========================================================================*/
 
 // Size
-.ck-bg-cover,
-.ck-bg-contain {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+.bg-cover,
+.bg-contain {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
-.ck-bg-cover {
-    background-size: cover;
+.bg-cover {
+  background-size: cover;
 }
 
-.ck-bg-contain {
-    background-size: contain;
+.bg-contain {
+  background-size: contain;
 }
 
 // .Position
-.ck-bg-top-left {
-    background-position: 0 0;
+.bg-top-left {
+  background-position: 0 0;
 }
 
-.ck-bg-top-center {
-    background-position: 50% 0;
+.bg-top-center {
+  background-position: 50% 0;
 }
 
-.ck-bg-top-right {
-    background-position: 100% 0;
+.bg-top-right {
+  background-position: 100% 0;
 }
 
-.ck-bg-center-left {
-    background-position: 0 50%;
+.bg-center-left {
+  background-position: 0 50%;
 }
 
-.ck-bg-center-center {
-    background-position: 50% 50%;
+.bg-center-center {
+  background-position: 50% 50%;
 }
 
-.ck-bg-center-right {
-    background-position: 100% 50%;
+.bg-center-right {
+  background-position: 100% 50%;
 }
 
-.ck-bg-bottom-left {
-    background-position: 0 100%;
+.bg-bottom-left {
+  background-position: 0 100%;
 }
 
-.ck-bg-bottom-center {
-    background-position: 50% 100%;
+.bg-bottom-center {
+  background-position: 50% 100%;
 }
 
-.ck-bg-bottom-right {
-    background-position: 100% 100%;
+.bg-bottom-right {
+  background-position: 100% 100%;
 }
 
 // .Repeat
-.ck-bg-norepeat {
-    background-repeat: no-repeat;
+.bg-norepeat {
+  background-repeat: no-repeat;
 }
 
 // Attachment
@@ -67,10 +67,10 @@
  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
  */
 
-.ck-bg-fixed {
-    background-attachment: fixed;
-    /* 1 */
-    backface-visibility: hidden;
+.bg-fixed {
+  background-attachment: fixed;
+  /* 1 */
+  backface-visibility: hidden;
 }
 
 
@@ -79,7 +79,7 @@
  */
 
 @media (pointer: coarse) {
-    .ck-bg-fixed {
-        background-attachment: scroll;
-    }
+  .bg-fixed {
+    background-attachment: scroll;
+  }
 }

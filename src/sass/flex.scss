@@ -5,12 +5,12 @@
    Component: Flex, build with UIkit 3.3.3.
  ========================================================================== */
 
-.ck-flex {
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.ck-flex-inline {
-    display: inline-flex;
+.flex-inline {
+  display: inline-flex;
 }
 
 
@@ -18,11 +18,11 @@
  * Remove pseudo elements created by micro clearfix as precaution
  */
 
-.ck-flex::before,
-.ck-flex::after,
-.ck-flex-inline::before,
-.ck-flex-inline::after {
-    display: none;
+.flex::before,
+.flex::after,
+.flex-inline::before,
+.flex-inline::after {
+  display: none;
 }
 
 
@@ -35,24 +35,24 @@
  * Row: Horizontal
  */
 
-.ck-flex-left {
-    justify-content: flex-start;
+.flex-left {
+  justify-content: flex-start;
 }
 
-.ck-flex-center {
-    justify-content: center;
+.flex-center {
+  justify-content: center;
 }
 
-.ck-flex-right {
-    justify-content: flex-end;
+.flex-right {
+  justify-content: flex-end;
 }
 
-.ck-flex-between {
-    justify-content: space-between;
+.flex-between {
+  justify-content: space-between;
 }
 
-.ck-flex-around {
-    justify-content: space-around;
+.flex-around {
+  justify-content: space-around;
 }
 
 
@@ -61,56 +61,56 @@
  * Row: Vertical
  */
 
-.ck-flex-stretch {
-    align-items: stretch;
+.flex-stretch {
+  align-items: stretch;
 }
 
-.ck-flex-top {
-    align-items: flex-start;
+.flex-top {
+  align-items: flex-start;
 }
 
-.ck-flex-middle {
-    align-items: center;
+.flex-middle {
+  align-items: center;
 }
 
-.ck-flex-bottom {
-    align-items: flex-end;
+.flex-bottom {
+  align-items: flex-end;
 }
 
 
 /* Direction
  ========================================================================== */
 
-.ck-flex-row {
-    flex-direction: row;
+.flex-row {
+  flex-direction: row;
 }
 
-.ck-flex-row-reverse {
-    flex-direction: row-reverse;
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
-.ck-flex-column {
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 
-.ck-flex-column-reverse {
-    flex-direction: column-reverse;
+.flex-column-reverse {
+  flex-direction: column-reverse;
 }
 
 
 /* Wrap
  ========================================================================== */
 
-.ck-flex-nowrap {
-    flex-wrap: nowrap;
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
-.ck-flex-wrap {
-    flex-wrap: wrap;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.ck-flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 
@@ -119,28 +119,28 @@
  * Only works if there is more than one line of flex items
  */
 
-.ck-flex-wrap-stretch {
-    align-content: stretch;
+.flex-wrap-stretch {
+  align-content: stretch;
 }
 
-.ck-flex-wrap-top {
-    align-content: flex-start;
+.flex-wrap-top {
+  align-content: flex-start;
 }
 
-.ck-flex-wrap-middle {
-    align-content: center;
+.flex-wrap-middle {
+  align-content: center;
 }
 
-.ck-flex-wrap-bottom {
-    align-content: flex-end;
+.flex-wrap-bottom {
+  align-content: flex-end;
 }
 
-.ck-flex-wrap-between {
-    align-content: space-between;
+.flex-wrap-between {
+  align-content: space-between;
 }
 
-.ck-flex-wrap-around {
-    align-content: space-around;
+.flex-wrap-around {
+  align-content: space-around;
 }
 
 
@@ -152,12 +152,12 @@
  * Default is 0
  */
 
-.ck-flex-first {
-    order: -1;
+.flex-first {
+  order: -1;
 }
 
-.ck-flex-last {
-    order: 99;
+.flex-last {
+  order: 99;
 }
 
 
@@ -176,8 +176,8 @@
  * Content dimensions
  */
 
-.ck-flex-none {
-    flex: none;
+.flex-none {
+  flex: none;
 }
 
 
@@ -186,8 +186,8 @@
  * Space is allocated considering content
  */
 
-.ck-flex-auto {
-    flex: auto;
+.flex-auto {
+  flex: auto;
 }
 
 
@@ -196,6 +196,6 @@
  * Space is allocated solely based on flex
  */
 
-.ck-flex-1 {
-    flex: 1;
+.flex-1 {
+  flex: 1;
 }

@@ -1,13 +1,14 @@
 @import "_mixin";
 @import "_variables";
-.ck-cover-container {
-    @include ck-cover-container;
+
+.cover-container {
+  @include cover-container;
 }
 
-.ck-cover {
-    @include ck-cover;
+.cover {
+  @include cover;
 }
 
-iframe.ck-cover {
-    pointer-events: none;
+iframe.cover {
+  pointer-events: none;
 }
