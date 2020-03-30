@@ -458,9 +458,15 @@ select {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 2px;
-  vertical-align: middle;
+  vertical-align: middle !important;
   height: 34px;
   line-height: 1;
+  @include reset-font;
+  transition: colallor .15s ease-in-out;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(94, 146, 240, .5);
+  }
 }
 
 

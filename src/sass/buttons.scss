@@ -1,0 +1,23 @@
+@import "_mixin";
+@import "_variables";
+
+.btn {
+  display: inline-block;
+  padding: $btn-padding;
+  color: $btn-color;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  border-radius: $btn-border-radius;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  line-height: 1;
+  @include reset-focus;
+}
+
+@include btn-style;

@@ -1,4 +1,5 @@
 # CSSkit
+
 简单的CSS组件库。
 
 我的更多网站：
@@ -6,6 +7,26 @@
 - https://www.aliyun.li/
 - https://wpmore.cn/
 - https://getkit.cn/
+
+# 使用说明
+
+## 直接引用
+
+不带自适应：
+`<link rel="stylesheet" href="csskit/dist/css/csskit.min.css">`
+
+自适应：
+`<link rel="stylesheet" href="csskit/dist/css/csskit.all.min.css">`
+
+
+## 自行编译
+
+`tyarn
+gulp`
+
+# 组件
+
+一些基础组件源于其他CSS框架中的组件。
 
 ## Base
 基于normalize.css v8.0.1。

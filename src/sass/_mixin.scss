@@ -632,3 +632,71 @@
 @mixin flex-1 {
   flex: 1;
 }
+
+/* Buttons
+   ========================================================================== */
+@mixin btn-style {
+
+  @each $btnName,
+  $bgColor,
+  $textColor,
+  $bdColor in (default, #e5e6e7, inherit, #e5e6e7),
+  (primary, #1458d4, #fff, #387bf4),
+  (secondary, #6c757d, #fff, #6c757d),
+  (success, #28a745, #fff, #28a745),
+  (danger, #dc3545, #fff, #dc3545),
+  (warning, #ffc107, #fff, #ffc107),
+  (info, #17a2b8, #fff, #17a2b8),
+  (light, #f8f9fa, inherit, #f8f9fa),
+  (dark, #343a40, #fff, #343a40),
+  (link, transparent, #007bff, transparent),
+    {
+    .btn-#{$btnName} {
+      color: $textColor;
+      background-color: $bgColor;
+      border-color: $bdColor;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color: $bgColor, $amount: 8);
+        border-color: darken($color: $bgColor, $amount: 9);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(lighten($color: $bgColor, $amount: 20), .5);
+      }
+
+      &:active {
+        background-color: darken($color: $bgColor, $amount: 9);
+        border-color: darken($color: $bgColor, $amount: 10);
+      }
+    }
+
+    @for $i from 1 through 10 {
+      .btn-#{$btnName} {
+        &:nth-child(1) {
+          &:focus {
+            box-shadow: 0 0 0 2px hsla(0, 0%, 82%, 0.5);
+          }
+        }
+
+        &:nth-child(8) {
+          &:focus {
+            box-shadow: 0 0 0 2px hsl(0, 0%, 96%);
+          }
+        }
+
+        &:last-child {
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
+    }
+  }
+}
