@@ -21,8 +21,8 @@
 
 ## 自行编译
 
-`tyarn
-gulp`
+`tyarn`
+`gulp`
 
 # 组件
 
