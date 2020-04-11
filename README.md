@@ -13,19 +13,19 @@
 ## 直接引用
 
 不带自适应：
-`<link rel="stylesheet" href="csskit/dist/css/csskit.min.css">`
+```<link rel="stylesheet" href="csskit/dist/css/csskit.min.css">```
 
 自适应：
-`<link rel="stylesheet" href="csskit/dist/css/csskit.all.min.css">`
+```<link rel="stylesheet" href="csskit/dist/css/csskit.min.css">```
+```<link rel="stylesheet" href="csskit/dist/css/grids-responsive.min.css">```
+```<!-- or -->```
+```<link rel="stylesheet" href="csskit/dist/css/csskit.all.min.css">```
 
 
 ## 自行编译
 
-安装依赖：
-`tyarn`
-
-编译：
-`gulp`
+```tyarn```
+```gulp```
 
 # 组件
 
