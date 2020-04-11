@@ -10,7 +10,13 @@ $primary-link:#1a73e8;
 
 /* Buttons
    ========================================================================== */
+
 $btn-padding:0.5em 0.6em;
 $btn-color:#212529;
 $btn-border-width:1px;
 $btn-border-radius:2px;
+
+/* Responsive breakpoints
+   ========================================================================== */
+
+$breakpoints: ('sm': (min-width: 568px), 'md': (min-width: 768px), 'lg': (min-width: 1024px), 'xl':(min-width:1280px)) !default;
