@@ -642,27 +642,23 @@
                 border-color: darken($color: $bgColor, $amount: 10);
             }
         }
-        @for $i from 1 through 10 {
-            .btn-#{$btnName} {
-                &:nth-child(1) {
-                    &:focus {
-                        box-shadow: 0 0 0 2px hsla(0, 0%, 82%, 0.5);
-                    }
-                }
-                &:nth-child(8) {
-                    &:focus {
-                        box-shadow: 0 0 0 2px hsl(0, 0%, 96%);
-                    }
-                }
-                &:last-child {
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                    &:focus {
-                        box-shadow: none;
-                    }
-                }
-            }
+    }
+    .btn-default {
+        &:focus {
+            box-shadow: 0 0 0 2px hsla(0, 0%, 82%, 0.5);
+        }
+    }
+    .btn-light {
+        &:focus {
+            box-shadow: 0 0 0 2px hsl(0, 0%, 96%);
+        }
+    }
+    .btn-link {
+        &:hover {
+            text-decoration: underline;
+        }
+        &:focus {
+            box-shadow: none;
         }
     }
 }

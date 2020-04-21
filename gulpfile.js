@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var postcss = require('gulp-postcss');
+var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var changed = require('gulp-changed');
@@ -41,6 +42,10 @@ function styles() {
         .pipe(changed(paths.styles.dest))
         .pipe(sass())
         .pipe(postcss(plugins))
+        // .pipe(cleanCSS({ debug: true, level:2 }, (details) => {
+        //     console.log(`${details.name}: ${details.stats.originalSize}`);
+        //     console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        // }))
         // pass in options to the stream
         .pipe(rename({
             // basename: 'style',
