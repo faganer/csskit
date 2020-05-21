@@ -1,12 +1,123 @@
 @import "_mixin";
 @import "_variables";
-
 .mask {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    // @include flex;
+    @include flex-center;
+    @include flex-middle;
+}
+
+@each $type,
+$color in (success, #28a745),
+(confirm, #1458d4),
+(warning, #ffc107),
+(error, #dc3545),
+(info, #17a2b8),
+{
+    .dialog-#{$type} {
+        .dialog-icon {
+            svg {
+                fill: $color;
+            }
+        }
+    }
+}
+
+.dialog-common {
+    .dialog-content {
+        margin-left: 0;
+    }
+}
+
+.dialog-wrap {
+    padding: 32px 32px 24px;
+    min-width: 300px;
+    line-height: 1.5715;
+    // word-wrap: break-word;
+    background-color: #fff;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
+}
+
+.dialog-icon {
+    @include fn-left;
+    margin-right: 16px;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.dialog-title {
+    display: block;
+    font-weight: bold;
+    font-size: 110%;
+    color: rgba(0, 0, 0, .85);
+    line-height: 1.4;
+}
+
+.dialog-content {
+    display: block;
+    margin-left: 38px;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, .65);
+}
+
+.dialog-footer {
+    margin-top: 20px;
+    @include text-right;
+    .btn {
+        margin-left: 15px;
+        font-size: 96%;
+    }
+}
+
+.dialog-show {
+    animation: dialog-show .3s;
+}
+
+.dialog-hide {
+    animation: dialog-hide .3s;
+}
+
+@keyframes dialog-show {
+    0% {
+        transform: scale(0.5);
+    }
+    // 45% {
+    //     transform: scale(1.05);
+    // }
+    // 80% {
+    //     transform: scale(0.95);
+    // }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dialog-hide {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
 }

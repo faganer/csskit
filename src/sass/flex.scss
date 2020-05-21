@@ -6,11 +6,11 @@
  ========================================================================== */
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-inline {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 
@@ -22,7 +22,7 @@
 .flex::after,
 .flex-inline::before,
 .flex-inline::after {
-  display: none;
+    display: none;
 }
 
 
@@ -36,23 +36,23 @@
  */
 
 .flex-left {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 .flex-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .flex-right {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .flex-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .flex-around {
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
 
@@ -62,19 +62,19 @@
  */
 
 .flex-stretch {
-  align-items: stretch;
+    align-items: stretch;
 }
 
 .flex-top {
-  align-items: flex-start;
+    align-items: flex-start;
 }
 
 .flex-middle {
-  align-items: center;
+    align-items: center;
 }
 
 .flex-bottom {
-  align-items: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -82,19 +82,19 @@
  ========================================================================== */
 
 .flex-row {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .flex-row-reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .flex-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .flex-column-reverse {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
 }
 
 
@@ -102,15 +102,15 @@
  ========================================================================== */
 
 .flex-nowrap {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
 
 
@@ -120,27 +120,27 @@
  */
 
 .flex-wrap-stretch {
-  align-content: stretch;
+    align-content: stretch;
 }
 
 .flex-wrap-top {
-  align-content: flex-start;
+    align-content: flex-start;
 }
 
 .flex-wrap-middle {
-  align-content: center;
+    align-content: center;
 }
 
 .flex-wrap-bottom {
-  align-content: flex-end;
+    align-content: flex-end;
 }
 
 .flex-wrap-between {
-  align-content: space-between;
+    align-content: space-between;
 }
 
 .flex-wrap-around {
-  align-content: space-around;
+    align-content: space-around;
 }
 
 
@@ -153,11 +153,11 @@
  */
 
 .flex-first {
-  order: -1;
+    order: -1;
 }
 
 .flex-last {
-  order: 99;
+    order: 99;
 }
 
 
@@ -177,7 +177,7 @@
  */
 
 .flex-none {
-  flex: none;
+    flex: none;
 }
 
 
@@ -187,7 +187,7 @@
  */
 
 .flex-auto {
-  flex: auto;
+    flex: auto;
 }
 
 
@@ -197,5 +197,5 @@
  */
 
 .flex-1 {
-  flex: 1;
+    flex: 1;
 }
