@@ -1,0 +1,53 @@
+@import "_mixin";
+@import "_variables";
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+
+  thead {
+    background-color: rgba($color: $primary-color, $alpha: 0.1);
+  }
+
+  th,
+  td {
+    padding: 0.5em 1em;
+    border-left: 1px solid #cbcbcb;
+
+    border-width: 0 0 0 1px;
+
+    &:first-child {
+      border-left-width: 0;
+    }
+  }
+
+  td {
+    color: rgba($color: $primary-color, $alpha: 0.9);
+  }
+}
+
+.table-horizontal {
+
+  th,
+  td {
+    border-bottom: 1px solid #cbcbcb;
+    border-left: 0;
+  }
+}
+
+.table-bordered {
+
+  th,
+  td {
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+}

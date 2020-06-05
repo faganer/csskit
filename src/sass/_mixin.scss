@@ -3,263 +3,277 @@
  ========================================================================== */
 
 @mixin reset-global {
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        @include reset-box-model;
-        @include reset-font;
-    }
-    // Unlike Eric's original reset, we reset the html element to be compatible
-    // with the vertical rhythm mixins.
-    html {
-        @include reset-body;
-    }
-    ol,
-    ul {
-        @include reset-list-style;
-    }
-    table {
-        @include reset-table;
-    }
-    caption,
-    th,
-    td {
-        @include reset-table-cell;
-    }
-    q,
-    blockquote {
-        @include reset-quotation;
-    }
-    a img {
-        @include reset-image-anchor-border;
-    }
-    // @include reset-html5;
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    @include reset-box-model;
+    @include reset-font;
+  }
+
+  // Unlike Eric's original reset, we reset the html element to be compatible
+  // with the vertical rhythm mixins.
+  html {
+    @include reset-body;
+  }
+
+  ol,
+  ul {
+    @include reset-list-style;
+  }
+
+  table {
+    @include reset-table;
+  }
+
+  caption,
+  th,
+  td {
+    @include reset-table-cell;
+  }
+
+  q,
+  blockquote {
+    @include reset-quotation;
+  }
+
+  a img {
+    @include reset-image-anchor-border;
+  }
+
+  // @include reset-html5;
 }
 
 @mixin reset-nested {
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        @include reset-box-model;
-        @include reset-font;
-    }
-    table {
-        @include reset-table;
-    }
-    caption,
-    th,
-    td {
-        @include reset-table-cell;
-    }
-    q,
-    blockquote {
-        @include reset-quotation;
-    }
-    a img {
-        @include reset-image-anchor-border;
-    }
+
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    @include reset-box-model;
+    @include reset-font;
+  }
+
+  table {
+    @include reset-table;
+  }
+
+  caption,
+  th,
+  td {
+    @include reset-table-cell;
+  }
+
+  q,
+  blockquote {
+    @include reset-quotation;
+  }
+
+  a img {
+    @include reset-image-anchor-border;
+  }
 }
 
 @mixin reset-box-model {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 @mixin reset-font {
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 @mixin reset-focus {
-    outline: 0;
+  outline: 0;
 }
 
 @mixin reset-body {
-    line-height: 1;
+  line-height: 1;
 }
 
 @mixin reset-list-style {
-    list-style: none;
+  list-style: none;
 }
 
 @mixin reset-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @mixin reset-table-cell {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
 }
 
 @mixin reset-quotation {
-    quotes: none;
-    &:before,
-    &:after {
-        content: "";
-        content: none;
-    }
+  quotes: none;
+
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
 @mixin reset-border {
-    border: none;
+  border: none;
 }
 
 
@@ -267,27 +281,29 @@
    ========================================================================== */
 
 @mixin clearfix {
-    &:before,
-    &:after {
-        display: table;
-        content: "";
-    }
-    &:after {
-        clear: both;
-    }
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
 }
 
 @mixin fn-left {
-    float: left !important;
+  float: left !important;
 }
 
 @mixin fn-center {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin fn-right {
-    float: right !important;
+  float: right !important;
 }
 
 
@@ -296,91 +312,100 @@
 
 // Links
 @mixin link-colors($normal, $hover, $active, $focus) {
-    color: $normal;
-    &:hover {
-        color: $hover;
-        @include reset-focus;
-    }
-    &:active {
-        color: $active;
-        @include reset-focus;
-    }
-    &:focus {
-        color: $focus;
-        @include reset-focus;
-    }
+  color: $normal;
+
+  &:hover {
+    color: $hover;
+    @include reset-focus;
+  }
+
+  &:active {
+    color: $active;
+    @include reset-focus;
+  }
+
+  &:focus {
+    color: $focus;
+    @include reset-focus;
+  }
 }
 
 // Lists
 @mixin no-bullet {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
 }
 
 @mixin no-bullets {
-    list-style: none;
-    li {
-        @include no-bullet;
-    }
+  list-style: none;
+
+  li {
+    @include no-bullet;
+  }
 }
 
 @mixin horizontal-list($padding: 4px, $direction: left) {
-    @include reset-box-model;
-    @include clearfix;
-    @include no-bullets;
-    li {
-        white-space: nowrap;
-        // @include horizontal-list-item($padding, $direction);
-        @if $direction {
-            float: $direction;
-        }
-        @if $padding {
-            padding: {
-                left: $padding;
-                right: $padding;
-            }
-        }
+  @include reset-box-model;
+  @include clearfix;
+  @include no-bullets;
+
+  li {
+    white-space: nowrap;
+
+    // @include horizontal-list-item($padding, $direction);
+    @if $direction {
+      float: $direction;
     }
+
+    @if $padding {
+      padding: {
+        left: $padding;
+        right: $padding;
+      }
+    }
+  }
 }
 
 @mixin inline-list {
-    list-style-type: none;
-    &,
-    & li {
-        margin: 0;
-        padding: 0;
-        display: inline;
-    }
+  list-style-type: none;
+
+  &,
+  & li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
 }
 
 // Text
 @mixin ellipsis($no-wrap: true) {
-    @if $no-wrap {
-        white-space: nowrap;
-    }
-    overflow: hidden;
-    text-overflow:ellipsis;
+  @if $no-wrap {
+    white-space: nowrap;
+  }
+
+  overflow: hidden;
+  text-overflow:ellipsis;
 }
 
 @mixin nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 @mixin text-left {
-    text-align: left;
+  text-align: left;
 }
 
 @mixin text-center {
-    text-align: center;
+  text-align: center;
 }
 
 @mixin text-right {
-    text-align: right;
+  text-align: right;
 }
 
 @mixin text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 
@@ -388,16 +413,16 @@
    ========================================================================== */
 
 @mixin cover-container {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 @mixin cover {
-    position: absolute;
-    max-width: none;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  max-width: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -405,11 +430,11 @@
    ==========================================================================*/
 
 @mixin flex {
-    display: flex;
+  display: flex;
 }
 
 @mixin flex-inline {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 
@@ -418,17 +443,19 @@
  */
 
 @mixin flex {
-    &:before,
-    &:after {
-        display: none;
-    }
+
+  &:before,
+  &:after {
+    display: none;
+  }
 }
 
 @mixin flex-inline {
-    &:before,
-    &:after {
-        display: none;
-    }
+
+  &:before,
+  &:after {
+    display: none;
+  }
 }
 
 
@@ -442,23 +469,23 @@
  */
 
 @mixin flex-left {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 @mixin flex-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 @mixin flex-right {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 @mixin flex-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 @mixin flex-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 
@@ -468,19 +495,19 @@
  */
 
 @mixin flex-stretch {
-    align-items: stretch;
+  align-items: stretch;
 }
 
 @mixin flex-top {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 @mixin flex-middle {
-    align-items: center;
+  align-items: center;
 }
 
 @mixin flex-bottom {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 
@@ -488,19 +515,19 @@
  ========================================================================== */
 
 @mixin flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 @mixin flex-row-reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 @mixin flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 @mixin flex-column-reverse {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 
@@ -508,15 +535,15 @@
  ========================================================================== */
 
 @mixin flex-nowrap {
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 @mixin flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @mixin flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 
@@ -526,27 +553,27 @@
  */
 
 @mixin flex-wrap-stretch {
-    align-content: stretch;
+  align-content: stretch;
 }
 
 @mixin flex-wrap-top {
-    align-content: flex-start;
+  align-content: flex-start;
 }
 
 @mixin flex-wrap-middle {
-    align-content: center;
+  align-content: center;
 }
 
 @mixin flex-wrap-bottom {
-    align-content: flex-end;
+  align-content: flex-end;
 }
 
 @mixin flex-wrap-between {
-    align-content: space-between;
+  align-content: space-between;
 }
 
 @mixin flex-wrap-around {
-    align-content: space-around;
+  align-content: space-around;
 }
 
 
@@ -559,11 +586,11 @@
  */
 
 @mixin flex-first {
-    order: -1;
+  order: -1;
 }
 
 @mixin flex-last {
-    order: 99;
+  order: 99;
 }
 
 
@@ -583,7 +610,7 @@
  */
 
 @mixin flex-none {
-    flex: none;
+  flex: none;
 }
 
 
@@ -593,7 +620,7 @@
  */
 
 @mixin flex-auto {
-    flex: auto;
+  flex: auto;
 }
 
 
@@ -603,7 +630,7 @@
  */
 
 @mixin flex-1 {
-    flex: 1;
+  flex: 1;
 }
 
 
@@ -611,56 +638,64 @@
    ========================================================================== */
 
 @mixin btn-style {
-    @each $btnName,
-    $bgColor,
-    $textColor,
-    $bdColor in (default, #e5e6e7, inherit, #e5e6e7),
-    (primary, #1458d4, #fff, #387bf4),
-    (secondary, #6c757d, #fff, #6c757d),
-    (success, #28a745, #fff, #28a745),
-    (danger, #dc3545, #fff, #dc3545),
-    (warning, #ffc107, #fff, #ffc107),
-    (info, #17a2b8, #fff, #17a2b8),
-    (light, #f8f9fa, inherit, #f8f9fa),
-    (dark, #343a40, #fff, #343a40),
-    (link, transparent, #007bff, transparent),
+
+  @each $btnName,
+  $bgColor,
+  $textColor,
+  $bdColor in (default, #e5e6e7, inherit, #e5e6e7),
+  (primary, #4284f3, #fff, #4284f3),
+  (secondary, #6c757d, #fff, #6c757d),
+  (success, #28a745, #fff, #28a745),
+  (danger, #dc3545, #fff, #dc3545),
+  (warning, #ffc107, #fff, #ffc107),
+  (info, #17a2b8, #fff, #17a2b8),
+  (light, #f8f9fa, inherit, #f8f9fa),
+  (dark, #343a40, #fff, #343a40),
+  (link, transparent, #4284f3, transparent),
     {
-        .btn-#{$btnName} {
-            color: $textColor;
-            background-color: $bgColor;
-            border-color: $bdColor;
-            &:hover,
-            &:focus {
-                background-color: darken($color: $bgColor, $amount: 8);
-                border-color: darken($color: $bgColor, $amount: 9);
-            }
-            &:focus {
-                box-shadow: 0 0 0 2px rgba(lighten($color: $bgColor, $amount: 20), .5);
-            }
-            &:active {
-                background-color: darken($color: $bgColor, $amount: 9);
-                border-color: darken($color: $bgColor, $amount: 10);
-            }
-        }
+    .btn-#{$btnName} {
+      color: $textColor;
+      background-color: $bgColor;
+      border-color: $bdColor;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color: $bgColor, $amount: 8);
+        border-color: darken($color: $bgColor, $amount: 9);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(lighten($color: $bgColor, $amount: 20), .5);
+      }
+
+      &:active {
+        background-color: darken($color: $bgColor, $amount: 9);
+        border-color: darken($color: $bgColor, $amount: 10);
+      }
     }
-    .btn-default {
-        &:focus {
-            box-shadow: 0 0 0 2px hsla(0, 0%, 82%, 0.5);
-        }
+  }
+
+  .btn-default {
+    &:focus {
+      box-shadow: 0 0 0 2px hsla(0, 0%, 82%, 0.5);
     }
-    .btn-light {
-        &:focus {
-            box-shadow: 0 0 0 2px hsl(0, 0%, 96%);
-        }
+  }
+
+  .btn-light {
+    &:focus {
+      box-shadow: 0 0 0 2px hsl(0, 0%, 96%);
     }
-    .btn-link {
-        &:hover {
-            text-decoration: underline;
-        }
-        &:focus {
-            box-shadow: none;
-        }
+  }
+
+  .btn-link {
+    &:hover {
+      text-decoration: underline;
     }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 
@@ -672,15 +707,18 @@
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
 @mixin breakpoint($breakpoint) {
-    // If the key exists in the map
-    @if map-has-key($breakpoints, $breakpoint) {
-        // Prints a media query based on the value
-        @media #{inspect(map-get($breakpoints, $breakpoint))} {
-            @content;
-        }
+
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
     }
-    // If the key doesn't exist in the map
-    @else {
-        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
-    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
 }

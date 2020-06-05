@@ -1,10 +1,126 @@
+@import "../src/sass/variables";
+@import "../src/sass/mixin";
+
 // .sidebar
 .sidebar {
   padding: 20px;
+
+  li {
+    border-bottom: 1px solid rgba($color: $primary-color, $alpha: 0.1);
+  }
+
+  a {
+    display: block;
+    padding: 0.5em 4em 0.5em 0.5em;
+    @include link-colors($secondary-color, $primary-link, $primary-link, $primary-link);
+  }
+
+  .current {
+    a {
+      color: $primary-color;
+    }
+  }
 }
 
+// .content
+.content {
+  padding-right: 20px;
+}
+
+.component-item {
+  display: none;
+
+  &.current {
+    display: block;
+  }
+}
+
+.component-demo,
+.component-code,
+.component-api {
+  margin-bottom: 1em;
+}
+
+.component-api {
+  .table {
+    th {
+      @include text-left;
+    }
+  }
+}
+
+// .component-buttons
 .component-buttons {
   .btn {
     margin-right: 15px;
+  }
+}
+
+// .component-grids
+.component-grids {
+  .component-demo {
+    margin-top: 1em;
+
+    .grids {
+      color: #fff;
+
+      .g-u-1-2 {
+        padding: 0.5em;
+        position: relative;
+        background-color: #adadad;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 1px;
+          background-color: #fff;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// .component-dialog
+.component-dialog {
+  .table {
+    margin-bottom: 20px;
+  }
+}
+
+// .component-tabs
+.component-tabs {
+  .tab-nav {
+    display: inline-block;
+    padding: 0.3em 0.5em;
+    color: $secondary-color;
+    cursor: pointer;
+
+    &.current {
+      position: relative;
+      color: $primary-color;
+
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: $primary-color;
+      }
+    }
   }
 }
