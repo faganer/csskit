@@ -1,126 +1,209 @@
 @import "../src/sass/variables";
 @import "../src/sass/mixin";
-
 // .sidebar
 .sidebar {
-  padding: 20px;
-
-  li {
-    border-bottom: 1px solid rgba($color: $primary-color, $alpha: 0.1);
-  }
-
-  a {
-    display: block;
-    padding: 0.5em 4em 0.5em 0.5em;
-    @include link-colors($secondary-color, $primary-link, $primary-link, $primary-link);
-  }
-
-  .current {
-    a {
-      color: $primary-color;
+    padding: 20px;
+    width: 200px;
+    li {
+        border-bottom: 1px solid rgba($color: $primary-color, $alpha: 0.1);
     }
-  }
+    a {
+        display: block;
+        padding: 0.5em 4em 0.5em 0.5em;
+        @include link-colors($secondary-color, $primary-link, $primary-link, $primary-link);
+    }
+    .current {
+        a {
+            color: $primary-color;
+        }
+    }
 }
 
 // .content
 .content {
-  padding-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .component-item {
-  display: none;
-
-  &.current {
-    display: block;
-  }
+    display: none;
+    &.current {
+        display: block;
+    }
 }
 
 .component-demo,
 .component-code,
 .component-api {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.component-demo,
+.component-api {
+    .table {
+        width: 100%;
+        // table-layout: fixed;
+    }
+}
+
+.component-demo-head {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.demo-nav-item {
+    display: inline-block;
+    padding: 0.5em 2em;
+    color: $secondary-color;
+    &.current {
+        position: relative;
+        color: $primary-color;
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            height: 2px;
+            background-color: $primary-link;
+        }
+    }
+}
+
+.demo-content-item {
+    pre {
+        max-width: calc(100vw - 240px);
+    }
 }
 
 .component-api {
-  .table {
-    th {
-      @include text-left;
+    .table {
+        th {
+            @include text-left;
+        }
     }
-  }
+}
+
+// .component-background
+.component-background {
+    .bg-cover,
+    .bg-contain {
+        @include fn-center;
+        width: 500px;
+        height: 400px;
+        p {
+            font-size: 20px;
+            color: #fff;
+        }
+    }
 }
 
 // .component-buttons
 .component-buttons {
-  .btn {
-    margin-right: 15px;
-  }
+    .btn {
+        margin-right: 15px;
+    }
+}
+
+// .component-cover
+.component-cover {
+    .cover-container {
+        width: 500px;
+        height: 600px;
+        img {
+            width: 600px;
+        }
+    }
+}
+
+// .component-flex
+.component-flex {
+    .doc-flex-item {
+        padding: 3em 3em;
+        background: #fafafa;
+        border: 1px solid #fff;
+    }
 }
 
 // .component-grids
 .component-grids {
-  .component-demo {
-    margin-top: 1em;
-
-    .grids {
-      color: #fff;
-
-      .g-u-1-2 {
-        padding: 0.5em;
-        position: relative;
-        background-color: #adadad;
-
-        &:before {
-          position: absolute;
-          content: "";
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 1px;
-          background-color: #fff;
+    .component-demo {
+        margin-top: 1em;
+        .grids {
+            color: #fff;
+            .g-u-1-2 {
+                padding: 0.5em;
+                position: relative;
+                background-color: #adadad;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 1px;
+                    background-color: #fff;
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
         }
-
-        &:after {
-          position: absolute;
-          content: "";
-          left: 0;
-          right: 0;
-          bottom: 0;
-          height: 1px;
-          background-color: #fff;
-        }
-      }
     }
-  }
+    .grids-unit {
+        margin: .25em 0;
+        padding-left: 4.5em;
+    }
+    .grids-unit-width {
+        width: 4em;
+        margin-left: -4.5em;
+        padding-right: .5em;
+        line-height: 2em;
+        text-align: right;
+        vertical-align: baseline;
+    }
+    .grids-unit-details {
+        position: relative;
+        background: #fafafa;
+    }
+    .grids-unit-bar {
+        height: 2em;
+        background: #eee;
+    }
 }
 
 // .component-dialog
 .component-dialog {
-  .table {
-    margin-bottom: 20px;
-  }
+    .table {
+        margin-bottom: 20px;
+    }
 }
 
 // .component-tabs
 .component-tabs {
-  .tab-nav {
-    display: inline-block;
-    padding: 0.3em 0.5em;
-    color: $secondary-color;
-    cursor: pointer;
-
-    &.current {
-      position: relative;
-      color: $primary-color;
-
-      &:after {
-        position: absolute;
-        content: "";
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 1px;
-        background-color: $primary-color;
-      }
+    .tab-nav {
+        display: inline-block;
+        padding: 0.3em 0.5em;
+        color: $secondary-color;
+        cursor: pointer;
+        &.current {
+            position: relative;
+            color: $primary-color;
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background-color: $primary-color;
+            }
+        }
     }
-  }
 }
