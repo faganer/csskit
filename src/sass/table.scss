@@ -11,16 +11,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  border: 1px solid #cbcbcb;
+  border: 1px solid $table-border-color;
 
   thead {
-    background-color: rgba($color: $primary-color, $alpha: 0.1);
+    background-color: $table-thead-background-color;
   }
 
   th,
   td {
     padding: 0.5em 1em;
-    border-left: 1px solid #cbcbcb;
+    border-left: 1px solid $table-border-color;
 
     border-width: 0 0 0 1px;
 
@@ -30,7 +30,7 @@ table {
   }
 
   td {
-    color: rgba($color: $primary-color, $alpha: 0.9);
+    color: $table-td-color;
   }
 }
 
@@ -38,7 +38,7 @@ table {
 
   th,
   td {
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: 1px solid $table-border-color;
     border-left: 0;
   }
 }
@@ -47,7 +47,7 @@ table {
 
   th,
   td {
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: 1px solid $table-border-color;
   }
 
 }
