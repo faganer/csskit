@@ -6,6 +6,15 @@ $(function () {
   // layout
   tabs(".sidebar li", ".component-item", '10');
 
+  // type
+  var type = [{ "class": "component-dialog", "num": "3" }, { "class": "component-modal", "num": "3" }, { "class": "component-tabs", "num": "3" }];
+  type.map(item => {
+    item.num = item.num - 1;
+    $("." + item.class + " tbody tr").each(function () {
+      $(this).find("td:eq(" + item.num + ")").addClass("doc-cl-red");
+    });
+  });
+
   // dialog
   $(".component-dialog .demo-content-item:first p a").click(function () {
     var type = $(this).text();

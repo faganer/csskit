@@ -258,21 +258,24 @@ $("p&nbsp;a").click(function()&nbsp;{
             </thead>
             <tbody>
               <tr>
-                <td>type</td>
-                <td>表现类型：common || confirm || info || success || error || warning</td>
+                <td><code>type</code></td>
+                <td>表现类型：<code>common</code> || <code>confirm</code> || <code>info</code>
+                  || <code>success</code> ||
+                  <code>error</code> ||
+                  <code>warning</code></td>
                 <td>string</td>
                 <td>否</td>
                 <td>common</td>
               </tr>
               <tr>
-                <td>title</td>
+                <td><code>title</code></td>
                 <td>标题</td>
                 <td>string</td>
                 <td>否</td>
                 <td></td>
               </tr>
               <tr>
-                <td>content</td>
+                <td><code>content</code></td>
                 <td>内容</td>
                 <td>string</td>
                 <td>是</td>
@@ -286,49 +289,49 @@ $("p&nbsp;a").click(function()&nbsp;{
                   <td>false</td>
                 </tr> -->
               <tr>
-                <td>okText</td>
+                <td><code>okText</code></td>
                 <td>确定按钮 文本</td>
                 <td>string</td>
                 <td>否</td>
                 <td>确定</td>
               </tr>
               <tr>
-                <td>cancelText</td>
+                <td><code>cancelText</code></td>
                 <td>取消按钮 文本，只有当 type 为 confirm 时才生效</td>
                 <td>string</td>
                 <td>否</td>
                 <td>取消</td>
               </tr>
               <tr>
-                <td>dialogClass</td>
+                <td><code>dialogClass</code></td>
                 <td>为 dialog 添加一个 class</td>
                 <td>string</td>
                 <td>否</td>
                 <td></td>
               </tr>
               <tr>
-                <td>okClass</td>
+                <td><code>okClass</code></td>
                 <td>替换 确定按钮 的 class</td>
                 <td>string</td>
                 <td>否</td>
                 <td>btn btn-primary</td>
               </tr>
               <tr>
-                <td>cancelClass</td>
+                <td><code>cancelClass</code></td>
                 <td>替换 取消按钮 的 class</td>
                 <td>string</td>
                 <td>否</td>
                 <td>btn btn-default</td>
               </tr>
               <tr>
-                <td>onOk</td>
+                <td><code>onOk</code></td>
                 <td>确定按钮 回调</td>
                 <td>function</td>
                 <td>否</td>
                 <td></td>
               </tr>
               <tr>
-                <td>onCancel</td>
+                <td><code>onCancel</code></td>
                 <td>取消按钮 回调</td>
                 <td>function</td>
                 <td>否</td>
@@ -1432,6 +1435,14 @@ $(".modal .btn-primary").click(function () {
               </p>
             </div>
             <div class="demo-content-item">
+              <pre><code class="html">&lt;p&gt;
+&nbsp;&nbsp;&lt;span&nbsp;class="tab-nav"&gt;Nav-1&lt;/span&gt;
+&nbsp;&nbsp;&lt;span&nbsp;class="tab-nav"&gt;Nav-2&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&nbsp;&nbsp;&lt;span&nbsp;class="tab-content-item"&gt;Content-1&lt;/span&gt;
+&nbsp;&nbsp;&lt;span&nbsp;class="tab-content-item"&gt;Content-2&lt;/span&gt;
+&lt;/p&gt;</code></pre>
               <pre><code class="js">tabs(".tab-nav",".tab-content-item", '1');
 // or
 tabs({
@@ -1458,28 +1469,28 @@ tabs({
             </thead>
             <tbody>
               <tr>
-                <td>nav</td>
+                <td><code>nav</code></td>
                 <td>导航 class</td>
                 <td>string</td>
                 <td>是</td>
                 <td></td>
               </tr>
               <tr>
-                <td>content</td>
+                <td><code>content</code></td>
                 <td>内容 class</td>
                 <td>string</td>
                 <td>是</td>
                 <td></td>
               </tr>
               <tr>
-                <td>current</td>
+                <td><code>current</code></td>
                 <td>默认激活第几个导航和第几个内容</td>
                 <td>Number</td>
                 <td>否</td>
                 <td>1</td>
               </tr>
               <tr>
-                <td>type</td>
+                <td><code>type</code></td>
                 <td>点击 或 鼠标指向 时切换tab：mouseover || click</td>
                 <td>string</td>
                 <td>否</td>
