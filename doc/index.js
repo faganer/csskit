@@ -4,7 +4,7 @@ $(function () {
   hljs.initHighlightingOnLoad();
 
   // layout
-  tabs(".sidebar li", ".component-item", '10');
+  tabs(".sidebar li", ".component-item", '1');
 
   // type
   var type = [{ "class": "component-dialog", "num": "3" }, { "class": "component-modal", "num": "3" }, { "class": "component-tabs", "num": "3" }];

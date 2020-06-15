@@ -1,34 +1,12 @@
 # CSSkit
 
-CSSkit是一组轻量级、响应式纯css模块，适用于任何Web项目。
-
-我的更多网站：
-- https://www.iopenv.com/
-- https://www.aliyun.li/
-- https://wpmore.cn/
-- https://getkit.cn/
+CSSkit是一组轻量级、响应式纯CSS基础模块，适用于任何Web项目。
 
 # 使用说明
 
 ## 直接引用
 
-```
-<!-- 非自适应 -->
-<link rel="stylesheet" href="../dist/css/csskit.min.css">
-
-<!-- 自适应 -->
-<link rel="stylesheet" href="../dist/css/csskit.min.css">
-<link rel="stylesheet" href="../dist/css/grids-responsive.min.css">
-
-<!-- 自适应 -->
-<link rel="stylesheet" href="../dist/css/csskit.all.min.css">
-
-<!-- 引入 jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-
-<!-- 引入 JavaScript -->
-<script src="../dist/js/csskit.min.js"></script>
-```
+详细查看“doc”文档。
 
 ## 自行编译
 
