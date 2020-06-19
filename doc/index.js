@@ -97,6 +97,13 @@ $(function () {
     })
   });
 
+  // message
+  message({
+    type: 'loading',
+    content: '测试',
+    duration: 0
+  });
+
   // modal
   $(".modal-event").click(function () {
     modal(".modal", "show");

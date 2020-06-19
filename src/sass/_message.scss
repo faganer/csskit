@@ -1,0 +1,72 @@
+@import "_mixin";
+@import "_variables";
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.message-body {
+  display: flex;
+  padding: .5em 1em;
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12),
+    0 6px 16px 0 rgba(0, 0, 0, .08),
+    0 9px 28px 8px rgba(0, 0, 0, .05);
+}
+
+.message-icon {
+  padding-right: .6em;
+  height: 24px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+
+@each $type,
+$iconColor in (common, #17a2b8),
+(success, #28a745),
+(error, #dc3545),
+(warning, #ffc107),
+(loading, #4284f3),
+  {
+  .message-#{$type} {
+    .message-icon {
+      svg {
+        fill: $iconColor;
+      }
+    }
+  }
+
+  @if $type==loading {
+
+    .message-icon {
+      svg {
+        animation: rotate 1.5s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  // 50% {
+  //   transform: rotate(360deg);
+  // }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
