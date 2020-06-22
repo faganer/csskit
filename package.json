@@ -1,46 +1,47 @@
 {
-    "name": "csskit",
-    "title": "CSSkit",
-    "version": "1.0.1",
-    "main": "dist/css/csskit.all.min.css",
-    "description": "Simple CSS component library.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/faganer/csskit.git"
-    },
-    "author": {
-        "name": "iOpenV",
-        "url": "https://www.iopenv.com/"
-    },
-    "keywords": [
-        "css",
-        "flex",
-        "grids",
-        "responsive"
-    ],
-    "dependencies": {
-        "@babel/core": "^7.9.6",
-        "autoprefixer": "^9.7.4",
-        "cssnano": "^4.1.10",
-        "del": "^5.1.0",
-        "gulp": "^4.0.2",
-        "gulp-babel": "^8.0.0",
-        "gulp-changed": "^4.0.2",
-        "gulp-clean-css": "^4.3.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-postcss": "^8.0.0",
-        "gulp-rename": "^2.0.0",
-        "gulp-sass": "^4.0.2",
-        "gulp-uglify": "^3.0.2"
-    },
-    "browserslist": [
-        "firefox > 40",
-        "Safari > 9",
-        "Opera > 50",
-        "ie >= 10",
-        "chrome > 50",
-        "Edge >= 12",
-        "Safari >= 9",
-        "Opera >= 17"
-    ]
+  "name": "csskit",
+  "title": "CSSkit",
+  "version": "1.0.5",
+  "main": "dist/js/csskit.min.js",
+  "style": "dist/css/csskit.all.min.css",
+  "description": "Simple CSS component library.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faganer/csskit.git"
+  },
+  "author": {
+    "name": "iOpenV",
+    "url": "https://www.iopenv.com/"
+  },
+  "keywords": [
+    "css",
+    "flex",
+    "grids",
+    "responsive"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "browserslist": [
+    "firefox > 40",
+    "Safari > 9",
+    "Opera > 50",
+    "ie >= 10",
+    "chrome > 50",
+    "Edge >= 12",
+    "Safari >= 9",
+    "Opera >= 17"
+  ]
 }
