@@ -47,12 +47,12 @@ $iconColor in (common, #17a2b8),
     }
   }
 
-  @if $type==loading {
+}
 
-    .message-icon {
-      svg {
-        animation: rotate 1.5s linear infinite;
-      }
+.message-loading {
+  .message-icon {
+    svg {
+      animation: rotate 1.5s linear infinite;
     }
   }
 }
@@ -61,10 +61,6 @@ $iconColor in (common, #17a2b8),
   0% {
     transform: rotate(0);
   }
-
-  // 50% {
-  //   transform: rotate(360deg);
-  // }
 
   100% {
     transform: rotate(360deg);

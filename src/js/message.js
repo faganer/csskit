@@ -16,12 +16,6 @@ window.message = function (options) {
     duration = options.duration, // 延时移除
     className = options.className; // 自定义class
 
-
-  // 默认3秒延迟
-  // if (duration === undefined || duration === NaN) {
-  //   duration = 3
-  // };
-
   // 传入内容
   if (content) {
 
@@ -56,7 +50,14 @@ window.message = function (options) {
 
     // 显示 message
     var msg = $(".message-" + messageShowID);
+    var msgNum = $(".message").length;
+    if (msgNum > 1) {
+      var prevTop = parseInt(msg.prev(".message").css("top"));
+      var prevHeight = msg.prev(".message").outerHeight() + 16;
+      msg.css("top", prevTop + prevHeight);
+    }
     msg.fadeIn();
+
 
 
     // 延时移除

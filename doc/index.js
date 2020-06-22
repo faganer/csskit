@@ -98,11 +98,14 @@ $(function () {
   });
 
   // message
-  message({
-    type: 'loading',
-    content: '测试',
-    duration: 0
+  $(".doc-msg-btns .btn").click(function () {
+    var type = $(this).text();
+    message({
+      type: type, // 类型
+      content: '这是一个关于 <b>' + type + '</b> 类型的消息。', // 内容
+    });
   });
+
 
   // modal
   $(".modal-event").click(function () {
@@ -115,7 +118,7 @@ $(function () {
 
   // tabs
   tabs(".tab-nav", ".tab-content-item", '1');
-  var demoContainer = ['.component-background', '.component-buttons', '.component-cover', '.component-dialog', '.component-flex .component-demo:first', '.component-flex .component-demo:eq(1)', '.component-flex .component-demo:eq(2)', '.component-flex .component-demo:eq(3)', '.component-modal', '.component-grids', '.component-table .component-demo:first', '.component-table .component-demo:eq(1)', '.component-table .component-demo:eq(2)', '.component-tabs'];
+  var demoContainer = ['.component-background', '.component-buttons', '.component-cover', '.component-dialog', '.component-flex .component-demo:first', '.component-flex .component-demo:eq(1)', '.component-flex .component-demo:eq(2)', '.component-flex .component-demo:eq(3)', '.component-modal', '.component-grids', '.component-table .component-demo:first', '.component-table .component-demo:eq(1)', '.component-table .component-demo:eq(2)', '.component-tabs', '.component-message'];
   demoContainer.map(item => {
     tabs(item + " .demo-nav-item", item + " .demo-content-item", '1');
   });
